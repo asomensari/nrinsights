@@ -56,7 +56,7 @@ func NewClient(cfg Config) (Client, error) {
 	return cli, nil
 }
 
-// NewClient creates a new client structure using the parsed flags, returning it as a Client interface
+// NewClientFromFlags creates a new client structure using the parsed flags, returning it as a Client interface
 // If either the endpoint or token are empty, an error will be returned, and the returned Client will silently no-op
 // return on all methods.
 func NewClientFromFlags() (Client, error) {

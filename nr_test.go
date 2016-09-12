@@ -10,7 +10,7 @@ import (
 	"dcx.rax.io/nrinsights"
 )
 
-//Block is a implementation of NREvent
+//Event is a implementation of NREvent
 type Event struct {
 	EventType string `json:"eventType"`
 	EventName string `json:"eventName"`
@@ -42,7 +42,7 @@ func ExampleClient() {
 	}
 
 	// Generate fake data
-	message := Event{"BlockCreation", "Foo", 1461097120}
+	message := Event{"EventCreation", "Foo", 1461097120}
 
 	// Send data to listener
 	c.Send(message)

@@ -5,10 +5,9 @@ type nilCheckClient struct {
 	client Client
 }
 
-// GlobalClient is a singleton global instance of the client
 var globalClient nilCheckClient
 
-//
+// GlobalClient is a singleton global instance of the client
 var GlobalClient Client = &globalClient
 
 // SetupGlobalClient sets up a the global singleton client using the provided details. If either the endpoint or token
