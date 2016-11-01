@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"net/http/httptest"
 
-	"dcx.rax.io/nrinsights"
+	"github.com/gusIreland/nrinsights"
 )
 
 //Event is a implementation of NREvent
